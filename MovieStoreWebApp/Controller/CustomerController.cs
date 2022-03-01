@@ -13,7 +13,7 @@ using MovieStoreWebApp.TokenSettings;
 
 namespace MovieStoreWebApp.Controller
 {
-    //[Authorize(Roles ="Admin")]
+    [Authorize(Roles ="Admin")]
     [ApiController]
     [Route("[controller]s")]
     public class CustomerController : ControllerBase

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MovieStoreWebApp.Application.MovieActorOperations.Commands.CreateMovieActor;
 using MovieStoreWebApp.DBOperations;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace MovieStoreWebApp.Controller
 {
+    [Authorize(Roles ="Admin")]
     [ApiController]
     [Route("[controller]s")]
     public class MovieActorController : ControllerBase

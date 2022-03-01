@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStoreWebApp", "MovieStoreWebApp\MovieStoreWebApp.csproj", "{3B7BFC7D-5CD8-4F0F-A908-CD4A40455803}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieStoreTest", "MovieStoreTests\MovieStoreTest.csproj", "{2B475D71-DF48-4492-B505-AE5002C38117}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStoreTest", "MovieStoreTests\MovieStoreTest.csproj", "{2B475D71-DF48-4492-B505-AE5002C38117}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

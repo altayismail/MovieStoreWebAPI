@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace MovieStoreWebApp.Controller
 {
-    //[Authorize(Roles ="Admin")]
+    [Authorize(Roles ="Admin")]
     [ApiController]
     [Route("[controller]s")]
     public class DirectorController : ControllerBase
