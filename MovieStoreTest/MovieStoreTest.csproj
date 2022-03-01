@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="FluentAssertions" Version="6.3.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieStoreWebApp\MovieStoreWebApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\ActorOperations\Command\DeleteActor\" />
+    <Folder Include="Application\ActorOperations\Command\UpdateActor\" />
+    <Folder Include="Application\ActorOperations\Queries\GetActorDetail\" />
+    <Folder Include="Application\ActorOperations\Queries\GetActors\" />
+    <Folder Include="Application\CustomerOperations\Command\CreateCustomer\" />
+    <Folder Include="Application\CustomerOperations\Command\DeleteCustomer\" />
+    <Folder Include="Application\DirectorOperations\Command\CreateDirector\" />
+    <Folder Include="Application\DirectorOperations\Command\DeleteDirector\" />
+    <Folder Include="Application\DirectorOperations\Command\UpdateDirector\" />
+    <Folder Include="Application\DirectorOperations\Queries\GetDirectorDetail\" />
+    <Folder Include="Application\DirectorOperations\Queries\GetDirectors\" />
+    <Folder Include="Application\MovieOperations\Command\CreateMovie\" />
+    <Folder Include="Application\MovieOperations\Command\DeleteMovie\" />
+    <Folder Include="Application\MovieOperations\Command\UpdateMovie\" />
+    <Folder Include="Application\MovieOperations\Queries\GetMovies\" />
+    <Folder Include="Application\MovieOperations\Queries\GetMovieDetail\" />
+    <Folder Include="Application\OrderOperations\Command\CreateOrder\" />
+    <Folder Include="Application\OrderOperations\Queries\GetOrders\" />
+    <Folder Include="Application\OrderOperations\Queries\GetOrderDetail\" />
+  </ItemGroup>
+
+</Project>
